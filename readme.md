@@ -1,5 +1,5 @@
 # Direct0r
-Neural Network designed to take in movie/tv show scripts and create new ones based on old data.
+Neural Network designed to take in movie/tv show scripts and create new ones after being trained.
 
 I plan to create a webpage frontend where users can upload their own files and train their own network instances.
 
