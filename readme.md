@@ -7,7 +7,7 @@ I plan to create a webpage frontend where users can upload their own files and t
 - Python 3.7.X
 - TensorFlow
 
-###Setup
+### Setup
 ``` 
 pip install tensorflow
 pip install matplotlib
