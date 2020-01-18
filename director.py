@@ -44,7 +44,7 @@ def makeTrainingAndTestingArrays(targetFiles, controlFiles):
 
 
 def convertLineToNumbers(line):
-	for i in range(0, len(line))
+	for i in range(0, len(line)):
 		num = addToDictionary(line[i])
 		line[i] = num
 
@@ -58,12 +58,6 @@ def addToDictionary(word):
 	#returns index of that word in dictionary
 	return dictionary.index(word)
 
-def loadPresetData():
-	data = keras.datasets.imdb
+def getTrainingAndTestingData(percentTestingEntries):
+	print("hello")
 
-	(train_data, train_labels), (test_data, test_labels) = data.load_data()
-
-	print(train_labels[0])
-
-
-loadPresetData()
