@@ -59,5 +59,20 @@ def addToDictionary(word):
 	return dictionary.index(word)
 
 def getTrainingAndTestingData(percentTestingEntries):
-	print("hello")
+	if(percentTestingEntries > 1 or percentTestingEntries < 0):
+		print("The Percentage of Testing Entries must be between 0 and 1!")
+		exit()
 
+	numTestingEntries = int(percentTestingEntries*len(data))
+
+	#shuffle arrays here
+	#
+	#
+
+	training_data = data[:numTestingEntries]
+	training_labels = labels[:numTestingEntries]
+
+	testing_data = data[numTestingEntries:]
+	testing_labels = data[numTestingEntries:]
+
+	return (training_data, training_labels, testing_data, testing_labels)
